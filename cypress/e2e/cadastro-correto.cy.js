@@ -6,6 +6,6 @@ describe('Página de Cadastro', () => {
       cy.get('[data-test="input-email"]').type('gabriel.justin@5455155este.com.br');
       cy.get('[data-test="input-password"]').type('Gabrielteste@1');
       cy.get('[data-test="input-confirm-password"]').type('Gabrielteste@1');
-      cy.get('[data-test="submit-button"]').click();
+      cy.get('[data-test="submit-button"]').cslick();
     })
   }) 
