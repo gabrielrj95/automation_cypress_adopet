@@ -8,4 +8,4 @@ describe('Página de Cadastro', () => {
       cy.get('[data-test="input-confirm-password"]').type('Gabrielteste@1');
       cy.get('[data-test="submit-button"]').click();
     })
-  })
+  }) 
