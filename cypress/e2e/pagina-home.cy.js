@@ -1,3 +1,4 @@
+/* Página home */
 describe('Teste de páginas no Adopet', () => {
     beforeEach(() => {
         cy.visit('https://adopet-frontend-cypress.vercel.app/');

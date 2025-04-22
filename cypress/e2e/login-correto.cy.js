@@ -22,5 +22,3 @@ describe('Página de login', () => {
 
     })
   });
-/*
-*/
