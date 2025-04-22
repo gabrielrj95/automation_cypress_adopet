@@ -11,3 +11,15 @@ describe('Página de login', () => {
       cy.get('[data-test="submit-button"]').click();
     })
   }) 
+
+
+  describe('Teste página adoção', () => {
+    beforeEach(() => {
+      cy.visit('https://adopet-frontend-cypress.vercel.app/home');
+    })
+    it('Verifica mensagem de texto', () =>{
+      cy.contains('p', 'Olá! ',' Veja os amigos disponíveis para adoção!').should('be.visible')
+
+    })
+  });
+
