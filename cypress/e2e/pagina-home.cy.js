@@ -48,7 +48,7 @@ describe('Teste quem ama adota', () => {
     beforeEach(() => {
         cy.visit('https://adopet-frontend-cypress.vercel.app/');
     })
-   
+
     it('Verifica mensagem de texto', () =>{
         cy.contains('p', 'Quem ama adota!').should('be.visible')
     })
@@ -59,3 +59,5 @@ describe('Teste quem ama adota', () => {
  
   });
 
+/*
+*/
