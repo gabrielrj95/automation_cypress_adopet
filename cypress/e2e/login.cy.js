@@ -1,3 +1,4 @@
+/* Cenário 01: Usuário realiza login pela página home e faz logout.*/
 describe('Fluxo de login e logout pela home', () => {
   beforeEach(() => {
     cy.visit('https://adopet-frontend-cypress.vercel.app');
@@ -15,6 +16,12 @@ describe('Fluxo de login e logout pela home', () => {
   })
 }) 
 
+/* Cenário 02:
+Caso 1: Usuário clica no ícone de "Carta" sem ter feito login no sistema, o sistema direciona para página de login
+e o usuário faz login.
+Caso 2: Após login sistema direciona para a página de adoção.
+Caso 3: Usuário clica no ícone de "Carta" e faz o envio sem informar nenhum dado nos campos, sistema notifica os campos de informe obrigatório.
+Caso 4: Usuário preenche todoss campos e faz o envio do formulário. */
 describe('Fluxo de Login e envio de mensagem', () => {
   beforeEach(() => {
     cy.visit('https://adopet-frontend-cypress.vercel.app/');

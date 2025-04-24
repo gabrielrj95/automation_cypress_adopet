@@ -2,7 +2,7 @@
 describe('Falha no login', () => {
     beforeEach(() => {
         cy.visit('https://adopet-frontend-cypress.vercel.app');
-        cy.get('[data-test="login-button"]').click().click;
+        cy.get('[data-test="login-button"]').click();
     });
     it('Deve preencher os campos do login incorretamente e exibir mensagens de erro ao usuário na página', () => {
         cy.get('[data-test="input-loginEmail"]').type('marjorie3');
@@ -17,7 +17,7 @@ describe('Falha no login', () => {
 describe('Falha no login', () => {
     beforeEach(() => {
         cy.visit('https://adopet-frontend-cypress.vercel.app');
-        cy.get('[data-test="login-button"]').click().click;
+        cy.get('[data-test="login-button"]').click();
     });
     it('Deve preencher os campos do login incorretamente e exibir mensagens de erro ao usuário na página', () => {
         cy.get('[data-test="input-loginEmail"]').type('gabriel@teste.com');
@@ -31,7 +31,7 @@ describe('Falha no login', () => {
 describe('Falha no login', () => {
     beforeEach(() => {
         cy.visit('https://adopet-frontend-cypress.vercel.app');
-        cy.get('[data-test="login-button"]').click().click;
+        cy.get('[data-test="login-button"]').click();
     });
     it('Deve preencher os campos do login incorretamente e exibir mensagens de erro ao usuário na página', () => {
         cy.get('[data-test="input-loginEmail"]').type('gabriel@teste1.com');
@@ -40,3 +40,4 @@ describe('Falha no login', () => {
         cy.contains('Falha no login. Consulte suas credenciais').should('be.visible')
     });
 });
+
