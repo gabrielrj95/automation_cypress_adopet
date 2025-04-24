@@ -5,12 +5,10 @@ describe('Teste de páginas no Adopet', () => {
     })
     it('deve  clicar no botão ‘Ver pets disponíveis para adoção”', () => {
         cy.get('.button').click()     
-       
     });
 
     it("deve testar os botão de home", ()=>{
-       cy.get('.header__home').click()  
-
+        cy.get('.header__home').click()  
     })
 
     it("Deve testar os botão de mensagens", ()=>{
@@ -37,11 +35,11 @@ describe('Testes na Página principal', () => {
     beforeEach(() => {
         cy.visit('https://adopet-frontend-cypress.vercel.app/');
     })
+
     it('deve clicar no botão ‘Ver pets disponíveis para adoção”', () => {
         cy.title().should('eq', 'AdoPet');
-     
     });
- 
+
 });
 
 
