@@ -4,7 +4,8 @@ module.exports = defineConfig({
   defaultCommandTimeout: 5000,
   e2e: {
     setupNodeEvents(on, config) {
-      // implement node event listeners here
+     // implement node event listeners here
     },
+    video: true,
   },
 });
