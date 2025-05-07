@@ -42,7 +42,6 @@ describe('Testes na Página principal', () => {
 
 });
 
-
 describe('Teste quem ama adota', () => {
     beforeEach(() => {
         cy.visit('https://adopet-frontend-cypress.vercel.app/');
