@@ -1,15 +1,14 @@
 {
-  "name":"curso_cypress",
+  "name": "curso_cypress",
   "version": "1.0.1",
   "main": "index.js",
-  "scripts": { 
+  "scripts": {
     "test": "echo \"Error: no test specfified\" && exit 1"
   },
-  "author":"",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^14.2.1",
     "mochawesome": "^7.1.3"
-  } 
+  }
 }
-
