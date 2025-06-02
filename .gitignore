@@ -2,10 +2,13 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=node
 
 1-getting-started/
+
 2-advanced-examples/
-fixtures/example.json
-fixtures/profile.json
-fixtures/users.json
+
+cypress/fixtures/example.json
+cypress/fixtures/profile.json
+cypress/fixtures/users.json
+
 examples
 notas.txt
 screenshots
