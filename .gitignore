@@ -3,7 +3,9 @@
 
 1-getting-started/
 2-advanced-examples/
-fixtures/
+fixtures/example.json
+fixtures/profile.json
+fixtures/users.json
 examples
 notas.txt
 screenshots
