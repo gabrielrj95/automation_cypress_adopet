@@ -61,5 +61,4 @@ describe('Página de login', () => {
 });
 
 
-/* https://adopet-api-i8qu.onrender.com/adotante/login*/
 
