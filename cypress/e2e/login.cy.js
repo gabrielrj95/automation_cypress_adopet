@@ -1,25 +1,25 @@
-// /* Cenário 01: Usuário realiza login pela página home e faz logout.*/
-// describe('Fluxo de login e logout pela home', () => {
-//   beforeEach(() => {
-//     cy.visit('https://adopet-frontend-cypress.vercel.app');
-//     cy.get('[data-test="login-button"]').click();  
-//   });
+/* Cenário 01: Usuário realiza login pela página home e faz logout.*/
+describe('Fluxo de login e logout pela home', () => {
+  beforeEach(() => {
+    cy.visit('https://adopet-frontend-cypress.vercel.app');
+    cy.get('[data-test="login-button"]').click();  
+  });
 
-//   it("Deve preencher os campos do login corretamente e autenticar o usuário na página", () => {
-//     cy.login('gabriel.justin@5455155este.com.br','Gabrielteste@1');
-//     cy.get('.header__user').click();
-//     cy.contains('a','Ver Perfil').should('be.visible');
-//     cy.contains('button','Logout').should('be.visible');
-//     cy.get('[data-test="submit-button"]').click();
-//   })
-// }) 
+  it("Deve preencher os campos do login corretamente e autenticar o usuário na página", () => {
+    cy.login('gabriel.justin@5455155este.com.br','Gabrielteste@1');
+    cy.get('.header__user').click();
+    cy.contains('a','Ver Perfil').should('be.visible');
+    cy.contains('button','Logout').should('be.visible');
+    cy.get('[data-test="submit-button"]').click();
+  })
+}) 
 
-// /* Cenário 02:
-// Caso 1: Usuário clica no ícone de "Carta" sem ter feito login no sistema, o sistema direciona para página de login
-// e o usuário faz login.
-// Caso 2: Após login sistema direciona para a página de adoção.
-// Caso 3: Usuário clica no ícone de "Carta" e faz o envio sem informar nenhum dado nos campos, sistema notifica os campos de informe obrigatório.
-// Caso 4: Usuário preenche todos campos e faz o envio do formulário. */
+/* Cenário 02:
+Caso 1: Usuário clica no ícone de "Carta" sem ter feito login no sistema, o sistema direciona para página de login
+e o usuário faz login.
+Caso 2: Após login sistema direciona para a página de adoção.
+Caso 3: Usuário clica no ícone de "Carta" e faz o envio sem informar nenhum dado nos campos, sistema notifica os campos de informe obrigatório.
+Caso 4: Usuário preenche todos campos e faz o envio do formulário. */
 
 
 describe('Fluxo de Login e envio de mensagem', () => {
