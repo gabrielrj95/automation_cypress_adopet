@@ -12,6 +12,7 @@ describe('Página de cadastro', () => {
             cy.get('[data-test="input-password"]').clear().type(usuario.password);
             cy.get('[data-test="input-confirm-password"]').clear().type(usuario.password);
             cy.get('[data-test="submit-button"]').click();          
+        
         })
     })
 })
